@@ -9,7 +9,7 @@ pipeline {
       }
       stage('storing value') {
         steps {
-          sh 'export CUSTOMER_EMAIL=contact@josdem.io'
+          sh 'export CUSTOMER_EMAIL="contact@josdem.io"'
         }
       }
       stage('reading value') {
