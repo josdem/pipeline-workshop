@@ -12,7 +12,7 @@ pipeline {
           sh 'export customer.email=contact@josdem.io'
         }
       }
-      stage('storing value') {
+      stage('reading value') {
         steps {
           sh 'echo $customer.emai'
         }
