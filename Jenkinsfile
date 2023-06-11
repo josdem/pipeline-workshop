@@ -17,7 +17,7 @@ pipeline {
       stage('reading value') {
         steps {
           script {
-            print $userEmail
+            print userEmail
           }
         }
       }
