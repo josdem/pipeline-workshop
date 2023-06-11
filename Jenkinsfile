@@ -14,7 +14,7 @@ pipeline {
       }
       stage('storing value') {
         steps {
-          sh 'echo $customer.emai
+          sh 'echo $customer.emai'
         }
       }
    }
