@@ -10,13 +10,15 @@ pipeline {
       stage('storing value') {
         steps {
           script{
-            System.setProperty("CUSTOMER_EMAIL", "contact@josdem.io")
+            def userEmail = "contact@josdem.io"
           }
         }
       }
       stage('reading value') {
         steps {
-          sh 'echo $CUSTOMER_EMAIL'
+          script {
+            print $userEmail
+          }
         }
       }
    }
