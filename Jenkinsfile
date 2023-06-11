@@ -9,12 +9,12 @@ pipeline {
       }
       stage('storing value') {
         steps {
-          System.setProperty("customer.email", "contact@josdem.io")
+          sh 'export customer.email="contact@josdem.io"
         }
       }
       stage('storing value') {
         steps {
-          print System.properties["customer.email"]
+          sh 'echo $customer.emai
         }
       }
    }
