@@ -1,4 +1,5 @@
 #!/usr/bin/env groovy
+def userEmail
 pipeline {
   agent any
     stages {
@@ -10,7 +11,7 @@ pipeline {
       stage('storing value') {
         steps {
           script{
-            def userEmail = "contact@josdem.io"
+            userEmail = "contact@josdem.io"
           }
         }
       }
